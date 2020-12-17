@@ -62,7 +62,8 @@ nav:hover:active h2 {
 
 input[type="text"],
 input[type="password"],
-input[type="button"] {
+input[type="button"],
+input[type="date"] {
   width: 30%;
   padding: 12px 20px;
   margin: 8px 0;

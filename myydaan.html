@@ -30,7 +30,6 @@
         
 
         
-
         <!-- Lista kirjoista-->
         <section class="section">
           <h2 class="section-header">Myydään</h2>
@@ -40,6 +39,8 @@ Nimi:<input type="text" name="nimi" id="nimi" />
 <input type="text" name="hinta" id="hinta" />
 <br />Paikkakunta
 <input type="text" name="pk" id="pk" />
+<br /><br />Päivämäärä
+<input type="date" name="pvm" id="pvm" />
 <br /><br />
 <input type="button" value="Myy kirja" onClick="addRow()" id="add">
 <br /><br />
@@ -56,27 +57,29 @@ Nimi:<input type="text" name="nimi" id="nimi" />
               <tr class="tr-header">
                 <th>&nbsp;</th>
                 <th>Hinta</th>
-                <th>Lisätty:</th>
                 <th>Paikkakunta</th>
+                <th>Lisätty</th>
               </tr>
               <!-- sisältö/ myyntiilmoitukset-->
               <tr>
                 <td class="text-left">Opi oppimaan</td>
                 <td>10€</td>
-                <td>01.12.2020</td>
                 <td>Turku</td>
+                <td>01.12.2020
+                </td>
               </tr>
               <tr>
                 <td class="text-left">Pänttärin pelastus</td>
                 <td>25€</td>
-                <td>17.11.2020</td>
                 <td>Salo</td>
+                <td>17.11.2020</td>
               </tr>
              
             </table>
             <script>
               function addRow()
               {
+              
                   var table = document.getElementById("resptable");
                   var row = document.createElement("tr");
                   var cell = document.createElement("td");
