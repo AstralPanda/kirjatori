@@ -1,0 +1,6 @@
+<header>
+   <%- include('./partials/myydaan') %>
+   <%- include('./partials/ostetaan') %>
+   <%- include('./partials/saannot') %>
+   <%- include('./partials/kirjaudu') %>
+   </header>
