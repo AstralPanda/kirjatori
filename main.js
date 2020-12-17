@@ -11,6 +11,7 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs'); 
 
+
 app.use(express.static('public'));
 app.use(express.static('views'))
 app.use(express.static('models'))
@@ -21,6 +22,7 @@ app.use(express.urlencoded({
 
 app.use(express.json());
 app.use(layouts);
+
 
 app.get('/', home_controller.respondWithName);
 
