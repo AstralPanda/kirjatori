@@ -57,12 +57,12 @@ nav:hover h2 {
 }
 nav:hover:active h2 {
   transform: translateY(10px);
-  box-shadow: 0px -1px 2px 0px rgba(0,0,0,.35);
- }
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.35);
+}
 
 input[type="text"],
 input[type="password"],
-input[type=button] {
+input[type="button"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -71,6 +71,7 @@ input[type=button] {
   box-sizing: border-box;
   opacity: 1;
   position: relative;
+  height: auto;
 }
 
 input {
