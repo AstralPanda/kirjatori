@@ -97,6 +97,12 @@ Nimi:<input type="text" name="nimi" id="nimi" />
                   cell.appendChild(cellText);
                   row.appendChild(cell);
                   table.appendChild(row);
+
+                  var cell = document.createElement("td");
+                  var cellText = document.createTextNode(document.getElementById("pvm").value);
+                  cell.appendChild(cellText);
+                  row.appendChild(cell);
+                  table.appendChild(row);
               
               }
               </script>
