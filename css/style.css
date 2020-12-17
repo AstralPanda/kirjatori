@@ -63,7 +63,7 @@ nav:hover:active h2 {
 input[type="text"],
 input[type="password"],
 input[type="button"] {
-  width: 100%;
+  width: 30%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
