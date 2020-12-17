@@ -60,6 +60,19 @@ nav:hover:active h2{
   box-shadow: 0px -1px 2px 0px rgba(0,0,0,.35);
  }
 
+input[type="text"],
+input[type="password"],
+input[type=button] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  opacity: 1;
+  position: relative;
+}
+
 input {
   position: absolute;
   left: 0;

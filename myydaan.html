@@ -34,6 +34,49 @@
         <!-- Lista kirjoista-->
         <section class="section">
           <h2 class="section-header">Myydään</h2>
+          <p>Täytä alla olevat kentät jos haluat myydä kirjan</p>
+Nimi:<input type="text" name="nimi" id="nimi" />
+<br />Hinta:
+<input type="text" name="hinta" id="hinta" />
+<br />Paikkakunta
+<input type="text" name="pk" id="pk" />
+<br /><br />
+<input type="button" value="Myy kirja" onClick="addRow()" id="add">
+<br /><br />
+<table id="table" border="1">
+<thead id="table-head">
+<tr>
+    <th>Nimi</th>
+    <th>Hinta</th>
+    <th>Paikkakunta</th>
+</tr>
+</thead>
+<tbody id="table-body">
+</tbody>
+</table>
+<script>
+function addRow()
+{
+    var table = document.getElementById("table");
+    var row = document.createElement("tr");
+    var cell = document.createElement("td");
+    var cellText = document.createTextNode(document.getElementById("nimi").value);
+    cell.appendChild(cellText);
+    row.appendChild(cell);
+
+    var cell = document.createElement("td");
+    var cellText = document.createTextNode(document.getElementById("hinta").value);
+    cell.appendChild(cellText);
+    row.appendChild(cell);
+
+    var cell = document.createElement("td");
+    var cellText = document.createTextNode(document.getElementById("pk").value);
+    cell.appendChild(cellText);
+    row.appendChild(cell);
+    table.appendChild(row);
+
+}
+</script>
 
           <div class="responsive-table">
 
