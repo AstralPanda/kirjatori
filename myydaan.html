@@ -43,44 +43,15 @@ Nimi:<input type="text" name="nimi" id="nimi" />
 <br /><br />
 <input type="button" value="Myy kirja" onClick="addRow()" id="add">
 <br /><br />
-<table id="table" border="1">
+<table id="table">
 <thead id="table-head">
-<tr>
-    <th>Nimi</th>
-    <th>Hinta</th>
-    <th>Paikkakunta</th>
-</tr>
 </thead>
 <tbody id="table-body">
 </tbody>
 </table>
-<script>
-function addRow()
-{
-    var table = document.getElementById("table");
-    var row = document.createElement("tr");
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode(document.getElementById("nimi").value);
-    cell.appendChild(cellText);
-    row.appendChild(cell);
-
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode(document.getElementById("hinta").value);
-    cell.appendChild(cellText);
-    row.appendChild(cell);
-
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode(document.getElementById("pk").value);
-    cell.appendChild(cellText);
-    row.appendChild(cell);
-    table.appendChild(row);
-
-}
-</script>
-
           <div class="responsive-table">
 
-            <table>
+            <table id="resptable" border="1">
               <!-- jaottelu/palkki-->
               <tr class="tr-header">
                 <th>&nbsp;</th>
@@ -103,11 +74,32 @@ function addRow()
               </tr>
              
             </table>
+            <script>
+              function addRow()
+              {
+                  var table = document.getElementById("resptable");
+                  var row = document.createElement("tr");
+                  var cell = document.createElement("td");
+                  var cellText = document.createTextNode(document.getElementById("nimi").value);
+                  cell.appendChild(cellText);
+                  row.appendChild(cell);
+              
+                  var cell = document.createElement("td");
+                  var cellText = document.createTextNode(document.getElementById("hinta").value);
+                  cell.appendChild(cellText);
+                  row.appendChild(cell);
+              
+                  var cell = document.createElement("td");
+                  var cellText = document.createTextNode(document.getElementById("pk").value);
+                  cell.appendChild(cellText);
+                  row.appendChild(cell);
+                  table.appendChild(row);
+              
+              }
+              </script>
           </div>
         </section>
       </div>
-
-      
       <footer>
         
         <p>All rights reserved by KirjatoriCompany Oy Ltd Inc. Corp.  2020</p>
